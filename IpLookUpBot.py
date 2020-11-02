@@ -26,7 +26,7 @@ array1 = []
 
 class iplookup():
     async def lookup_class(self, *, arg):
-        dang.clear()
+        array1.clear()
         x = str(input())
         y = array1.append(x)
         return '{}'.format(y,arg)
