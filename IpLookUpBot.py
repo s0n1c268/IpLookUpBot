@@ -32,8 +32,8 @@ class iplookup():
         return '{}'.format(y,arg)
 
 @bot.command()
-async def lookup(ctx, *, lol=str(iplookup)):
-    res = gip.record_by_addr(lol)
+async def lookup(ctx, *, request=str(iplookup)):
+    res = gip.record_by_addr(request)
     for key,val in res.items():
         await ctx.send('%s : %s' % (key,val))
 
